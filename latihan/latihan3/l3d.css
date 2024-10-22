@@ -1,16 +1,28 @@
 body{
-    background-color: aqua;
+    background-color: white;
     font-family: Georgia;
+    background-image: url(background.png);
+    background-repeat: repeat-x;
 }
 
 h1{
     font-family: Comic Sans MS;
     font-size: 60px;
     color: darkblue;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+h3 a:hover{
+    text-decoration: none;
+    color: pink;
 }
 
 h4{
-    text-align: right;
+    text-align: center;
     font-style: italic;
 }
 
@@ -19,14 +31,19 @@ p{
 }
 
 .sosial{
-    color: #ffffff;
+    color: red;
 }
 
 .text1{
     text-align: center;
-    color: #ffd700;
+    color: orange;
 }
 
 .text2{
     text-align: right;
+}
+
+.text2 a:hover{
+    background-color: blue;
+    color: white;
 }
