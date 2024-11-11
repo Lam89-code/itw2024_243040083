@@ -1,0 +1,81 @@
+/* Font */
+@font-face{
+    font-weight: 'BebasNeue';
+    src: url(../fonts/BebasNeue-Bold.otf) format('otf');
+}
+
+/* Style Umum */
+body {
+    font: 18px/26px 'BebasNeue', 'Arial Narrow', arial, sans-serif;
+    background: url(../img/full/12.jpg);
+}
+
+h1 {
+    color: #c1783a;
+    text-align: center;
+    font-size: 60px;
+    line-height: 0.9;
+    padding-top: 7vh;
+    margin-bottom: 5vh;
+}
+
+h1 span {
+    color: #cfd9db;
+    font-size: 40px;
+}
+
+
+.container{
+    width: 85%;
+    height: 700px;
+    margin: 50px 100px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container img{
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+    border-radius: 10px;
+    border: 3px solid #c1783a;
+    transition: all ease-in-out 0.4s;
+    cursor: pointer;
+    margin: 0 3px;
+}
+
+.container img:hover{
+    width: 10%;
+    flex: 1 1 280px;
+    opacity: 1;
+}
+
+.loader {
+    width: 100%;
+    height: 22px;
+    border-radius: 40px;
+    color: #c1783a;
+    border: 2px solid;
+    position: relative;
+    overflow: hidden;
+}
+
+.loader::before {
+    content: "";
+    position: absolute;
+    margin: 2px;
+    width: 15px;
+    top: 0;
+    bottom: 0;
+    left: -20px;
+    border-radius: inherit;
+    background: currentColor;
+    box-shadow: -10px 0 12px 3px currentColor;
+    clip-path: polygon(0 5%, 100% 0,100% 100%,0 95%,-30px 50%);
+    animation: l14 3s infinite linear;
+  }
+  @keyframes l14 {
+    100% {left: calc(100% + 20px)}
+  }
